@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,24 @@
     <title>Teste tecnico mandarin</title>
 
     <style>
+        body {
+            font-family: arial;
+        }
+
+        .borda {
+            background-color: #eeeeee;
+            width: 640px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
         .tabela {
             width: 600px;
-
+            background-color: white;
             margin: 0 auto;
+            border-collapse: collapse;
+            border-spacing: 0;
 
         }
 
@@ -19,10 +33,15 @@
             height: auto;
         }
 
+        .tabela h1 {
+            font-size: 25px;
+            margin: 10px 0;            
+        }   
+
         .tabela h2 {
             font-size: 18px;
-            margin: 10px 0;
-        }
+            margin: 10px 0;            
+        }        
 
         .tabela p {
             margin: 5px 0;
@@ -32,105 +51,149 @@
             text-align: center;
         }
 
+        .rodape {
+            text-align: center;
+            background-color: #eeeeee;
+        }
+
+        #fonte {
+            font-style: italic;
+            color: grey;
+            font-size: 14px;
+            position: relative;
+        }
+
+        #fonte::after {            
+            content: "";
+            background: black; 
+            height: 3px;
+            width: 50%;
+            position: absolute;
+            bottom: -5px;
+            left: 0;                   
+        }
+
+        #link {
+            color: black;
+        }
+
         @media (max-width: 600px) {
             .tabela {
                 width: 100%;
-                /* Faça a tabela ocupar 100% da largura da tela */
             }
 
             .tabela img {
                 width: 100%;
-                /* Faça as imagens ocuparem 100% da largura da tabela */
                 height: auto;
-                /* Mantenha a proporção da imagem */
+            }
+
+            .tabela h1 {
+                font-size: 16px;
+                margin: 8px 0;
             }
 
             .tabela h2 {
-                font-size: 16px;
-                /* Reduza o tamanho da fonte */
+                font-size: 12px;
                 margin: 8px 0;
-                /* Ajuste as margens */
             }
 
             .tabela p {
                 margin: 4px 0;
-                /* Ajuste as margens */
+                font-size: 10px;
             }
 
             .tabela tfoot p {
                 text-align: center;
+            }
+
+            #fonte {
+                font-style: italic;
+                color: grey;
+                font-size: 8px;
             }
         }
     </style>
 </head>
 
 <body>
-    <table class="tabela">
-        <thead>
-            <tr>
-                <td>
-                    <img src="./img/cabecalho.png" alt="cabecalho">
-                </td>
-            </tr>
-
-        </thead>
+    <table class="borda">
         <tbody>
             <tr>
                 <td>
-                    <img src="./img/noticia1.png" alt="noticia1">
+                    <table class="tabela">
+                        <thead>
+                            <tr>
+                                <td>
+                                    <img src="./img/cabecalho.png" alt="cabecalho">
+                                </td>
+                            </tr>
 
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h2>NRF 2020: conheça os top 5 assuntos do evento.</h2>
-                    <p>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o
-                        setor.</p>
-                    <p>Fonte: CMO ADOBE</p>
-                </td>
-            </tr>
-            <tr>
-                <table class="tabela">
-                    <tbody>
-                        <td>
-                            <img src="./img/noticia2.png" alt="noticia2">
-                        </td>
-                        <td>
-                            <img src="./img/noticia3.png" alt="noticia3">
-                        </td>
-            </tr>
-            <tr>
-                <td>
-                    <h2>Petição para colocar Kobe Bryant no logo da NBA.</h2>
-                    <p>Fonte: Daily Mail</p>
-                </td>
-                <td>
-                    <h2>WhatsApp terá função de pagamentos em 2020.</h2>
-                    <p>Fonte: Proxxima</p>
-                </td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="./img/noticia1.png" alt="noticia1">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h1>NRF 2020: conheça os top 5 assuntos do evento.</h2>
+                                        <p>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e
+                                            inovações para
+                                            o
+                                            setor.</p>
+                                        <p id="fonte">Fonte: CMO ADOBE</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <table class="tabela">
+                                    <tbody>
+                                        <td>
+                                            <img src="./img/noticia2.png" alt="noticia2">
+                                        </td>
+                                        <td>
+                                            <img src="./img/noticia3.png" alt="noticia3">
+                                        </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>Petição para colocar Kobe Bryant no logo da NBA.</h2>                                    
+                                    <p id="fonte">Fonte: Daily Mail</p>
+                                </td>
+                                <td>
+                                    <h2>WhatsApp terá função de pagamentos em 2020.</h2>
+                                    <p id="fonte">Fonte: Proxxima</p>
+                                </td>
+                        <tfoot>
+                            <tr>
+                                <table class="tabela">
+                                    <tbody>
+                                        <td>
+                                            <img src="./img/rodape.png" alt="rodape">
+                                        </td>
+                            </tr>
+                            <tr>
+                                <td class="rodape">
+                                    <p>Copyright &copy; Mandarin. Todos os direitos reservados.</p>
+                                    <p>Caso não deseja mais receber nossos e-mails, por favor <a href="#"
+                                            id="link">clique aqui</a></p>
+                                </td>
         </tbody>
     </table>
     </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <table class="tabela">
-                <tbody>
-                    <td>
-                        <img src="./img/rodape.png" alt="rodape">
-                    </td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">
-                <p>Copyright Mandarin. Todos os direitos reservados.</p>
-                <p>Caso não deseja mais receber nossos e-mails, por favor <a href="#">clique aqui</a></p>
-            </td>
-            </tbody>
-            </table>
-        </tr>
 
     </tfoot>
+    </tbody>
+    </table>
+    </tr>
+    </tbody>
 
+
+    </table>
+    </td>
+    </tr>
+    </tbody>
     </table>
 </body>
 
