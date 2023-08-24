@@ -35,13 +35,13 @@
 
         .tabela h1 {
             font-size: 25px;
-            margin: 10px 0;            
-        }   
+            margin: 10px 0;
+        }
 
         .tabela h2 {
             font-size: 18px;
-            margin: 10px 0;            
-        }        
+            margin: 10px 0;
+        }
 
         .tabela p {
             margin: 5px 0;
@@ -54,6 +54,7 @@
         .rodape {
             text-align: center;
             background-color: #eeeeee;
+            font-size: 12px;
         }
 
         #fonte1 {
@@ -77,34 +78,34 @@
             position: relative;
         }
 
-        #fonte1::after {            
+        #fonte1::after {
             content: "";
             background: linear-gradient(to right, #ff2f60, #6657b0);
             height: 5px;
             width: 50%;
             position: absolute;
             bottom: -5px;
-            left: 0;                   
+            left: 0;
         }
 
-        #fonte2::after {            
+        #fonte2::after {
             content: "";
             background: linear-gradient(to right, #34beb8, #6657b0);
             height: 5px;
             width: 50%;
             position: absolute;
             bottom: -5px;
-            left: 0;                   
+            left: 0;
         }
 
-        #fonte3::after {            
+        #fonte3::after {
             content: "";
             background: linear-gradient(to right, #39bfbf, #28c66a);
             height: 5px;
             width: 50%;
             position: absolute;
             bottom: -5px;
-            left: 0;                   
+            left: 0;
         }
 
         #link {
@@ -112,13 +113,16 @@
         }
 
         @media (max-width: 600px) {
-            .tabela {
+            .borda {
                 width: 100%;
+            }
+            .tabela {
+                width: 95%;
             }
 
             .tabela img {
                 width: 100%;
-                height: auto;
+                height: 100%;
             }
 
             .tabela h1 {
@@ -145,14 +149,20 @@
                 color: grey;
                 font-size: 8px;
             }
+
             #fonte2 {
                 font-style: italic;
                 color: grey;
                 font-size: 8px;
             }
+
             #fonte3 {
                 font-style: italic;
                 color: grey;
+                font-size: 8px;
+            }
+
+            .rodape {
                 font-size: 8px;
             }
         }
@@ -202,7 +212,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <h2>Petição para colocar Kobe Bryant no logo da NBA.</h2>                                    
+                                    <h2>Petição para colocar Kobe Bryant no logo da NBA.</h2>
                                     <p id="fonte2">Fonte: Daily Mail</p>
                                 </td>
                                 <td>
