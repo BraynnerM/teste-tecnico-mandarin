@@ -56,17 +56,51 @@
             background-color: #eeeeee;
         }
 
-        #fonte {
+        #fonte1 {
             font-style: italic;
             color: grey;
             font-size: 14px;
             position: relative;
         }
 
-        #fonte::after {            
+        #fonte2 {
+            font-style: italic;
+            color: grey;
+            font-size: 14px;
+            position: relative;
+        }
+
+        #fonte3 {
+            font-style: italic;
+            color: grey;
+            font-size: 14px;
+            position: relative;
+        }
+
+        #fonte1::after {            
             content: "";
-            background: black; 
-            height: 3px;
+            background: linear-gradient(to right, #ff2f60, #6657b0);
+            height: 5px;
+            width: 50%;
+            position: absolute;
+            bottom: -5px;
+            left: 0;                   
+        }
+
+        #fonte2::after {            
+            content: "";
+            background: linear-gradient(to right, #34beb8, #6657b0);
+            height: 5px;
+            width: 50%;
+            position: absolute;
+            bottom: -5px;
+            left: 0;                   
+        }
+
+        #fonte3::after {            
+            content: "";
+            background: linear-gradient(to right, #39bfbf, #28c66a);
+            height: 5px;
             width: 50%;
             position: absolute;
             bottom: -5px;
@@ -106,7 +140,17 @@
                 text-align: center;
             }
 
-            #fonte {
+            #fonte1 {
+                font-style: italic;
+                color: grey;
+                font-size: 8px;
+            }
+            #fonte2 {
+                font-style: italic;
+                color: grey;
+                font-size: 8px;
+            }
+            #fonte3 {
                 font-style: italic;
                 color: grey;
                 font-size: 8px;
@@ -143,7 +187,7 @@
                                             inovações para
                                             o
                                             setor.</p>
-                                        <p id="fonte">Fonte: CMO ADOBE</p>
+                                        <p id="fonte1">Fonte: CMO ADOBE</p>
                                 </td>
                             </tr>
                             <tr>
@@ -159,11 +203,11 @@
                             <tr>
                                 <td>
                                     <h2>Petição para colocar Kobe Bryant no logo da NBA.</h2>                                    
-                                    <p id="fonte">Fonte: Daily Mail</p>
+                                    <p id="fonte2">Fonte: Daily Mail</p>
                                 </td>
                                 <td>
                                     <h2>WhatsApp terá função de pagamentos em 2020.</h2>
-                                    <p id="fonte">Fonte: Proxxima</p>
+                                    <p id="fonte3">Fonte: Proxxima</p>
                                 </td>
                         <tfoot>
                             <tr>
