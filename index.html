@@ -5,70 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste tecnico mandarin</title>
+
+    <style>
+        .tabela {
+            width: 600px;
+
+            margin: 0 auto;
+
+        }
+
+        .tabela img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .tabela h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .tabela p {
+            margin: 5px 0;
+        }
+
+        .tabela tfoot p {
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .tabela {
+                width: 100%;
+                /* Faça a tabela ocupar 100% da largura da tela */
+            }
+
+            .tabela img {
+                width: 100%;
+                /* Faça as imagens ocuparem 100% da largura da tabela */
+                height: auto;
+                /* Mantenha a proporção da imagem */
+            }
+
+            .tabela h2 {
+                font-size: 16px;
+                /* Reduza o tamanho da fonte */
+                margin: 8px 0;
+                /* Ajuste as margens */
+            }
+
+            .tabela p {
+                margin: 4px 0;
+                /* Ajuste as margens */
+            }
+
+            .tabela tfoot p {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <table class="tabela">
-        <tr>
-            <td>
-                <thead>
-                    <tr>
-                        <td>
-                            <img src="./img/cabecalho.png" alt="cabecalho">
-                        </td>
-                    </tr>
+        <thead>
+            <tr>
+                <td>
+                    <img src="./img/cabecalho.png" alt="cabecalho">
+                </td>
+            </tr>
 
-                </thead>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="./img/noticia1.png" alt="noticia1">
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="./img/noticia1.png" alt="noticia1">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h2>NRF 2020: conheça os top 5 assuntos do evento.</h2>
-                            <p>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</p>
-                            <p>Fonte: CMO ADOBE</p>
-                        </td>
-                    </tr>
-                    <tr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>NRF 2020: conheça os top 5 assuntos do evento.</h2>
+                    <p>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o
+                        setor.</p>
+                    <p>Fonte: CMO ADOBE</p>
+                </td>
+            </tr>
+            <tr>
+                <table class="tabela">
+                    <tbody>
                         <td>
                             <img src="./img/noticia2.png" alt="noticia2">
                         </td>
                         <td>
                             <img src="./img/noticia3.png" alt="noticia3">
                         </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h2>Petição para colocar Kobe Bryant no logo da NBA.</h2>
-                            <p>Fonte: Daily Mail</p>
-                        </td>
-                        <td>
-                            <h2>WhatsApp terá função de pagamentos em 2020.</h2>
-                            <p>Fonte: Proxxima</p>
-                        </td>
-                    </tr>
-
-                </table>
-                <tfoot>
-                    <tr>
-                        <td>
-                            <img src="./img/rodape.png" alt="rodape">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Copyright Mandarin. Todos os direitos reservados.</p>
-                            <p>Caso não deseja mais receber nossos e-mails, por favor <a href="#">clique aqui</a></p>
-                        </td>
-                    </tr>
-
-                </tfoot>
-            </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Petição para colocar Kobe Bryant no logo da NBA.</h2>
+                    <p>Fonte: Daily Mail</p>
+                </td>
+                <td>
+                    <h2>WhatsApp terá função de pagamentos em 2020.</h2>
+                    <p>Fonte: Proxxima</p>
+                </td>
+        </tbody>
+    </table>
+    </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <table class="tabela">
+                <tbody>
+                    <td>
+                        <img src="./img/rodape.png" alt="rodape">
+                    </td>
         </tr>
+        <tr>
+            <td style="text-align: center;">
+                <p>Copyright Mandarin. Todos os direitos reservados.</p>
+                <p>Caso não deseja mais receber nossos e-mails, por favor <a href="#">clique aqui</a></p>
+            </td>
+            </tbody>
+            </table>
+        </tr>
+
+    </tfoot>
+
     </table>
 </body>
 
